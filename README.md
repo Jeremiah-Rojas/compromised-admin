@@ -2,8 +2,7 @@
 **Malicious activity was detected from a compromised admin account**
 
 ## Example Scenario:
-One of the the administrators from the IT team call you, cybersecurity analyst, and tells you he 
-Management suspects that some employees may be using TOR browsers to bypass network security controls because recent network logs show unusual encrypted traffic patterns and connections to known TOR entry nodes. Additionally, there have been anonymous reports of employees discussing ways to access restricted sites during work hours. The goal is to detect any TOR usage and analyze related security incidents to mitigate potential risks.
+One of the administrators from the IT team calls you, the cybersecurity analyst, and tells you he is seeing some file that he has never seen before and one that he did not download; most likely due to a script. After looking into the situation more, you realize that the administrator’s account had been logged into after work hours. The goal is to analyze the events leading up to the account breach and to figure out how the file appeared on the desktop.
 
 ---
 
