@@ -22,7 +22,7 @@ powershell.exe -EncodedCommand VwByAGkAdABlAC0ATwB1AHQAcAB1AHQAIABoAGUAbABsAG8AI
 
 # Define the URL and the destination path
 $url = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%2Fid%2FOIP.D_2umvMRIihretglyFNrlwHaEK%3Fr%3D0%26pid%3DApi&f=1&ipt=c3186ebe04803f74c7321aa6f7a1ddc64ab70f005e924506bd045c0c41df2737&ipo=images"
-$output = ".\image.jpg"
+$output = "C:\Users\thanos\Downloads\image.jpg"
 
 # Download the image
 Invoke-WebRequest -Uri $url -OutFile $output
