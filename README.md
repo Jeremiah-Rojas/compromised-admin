@@ -12,6 +12,9 @@ Management suspects that some employees may be using TOR browsers to bypass netw
 3. Check DeviceNetworkEvents for any signs of outgoing connections over known TOR ports
 
 ---
+## Steps Taken by Bad Actor
+1. 
+---
 
 ## Steps Taken
 
