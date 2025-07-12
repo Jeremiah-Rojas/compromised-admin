@@ -1,7 +1,8 @@
 # Threat Hunt Report (Compromised Admin Account)
-**Detection of Unauthorized TOR Browser Installation and Use**
+**Malicious activity was detected from a compromised admin account**
 
 ## Example Scenario:
+One of the the administrators from the IT team call you, cybersecurity analyst, and tells you he 
 Management suspects that some employees may be using TOR browsers to bypass network security controls because recent network logs show unusual encrypted traffic patterns and connections to known TOR entry nodes. Additionally, there have been anonymous reports of employees discussing ways to access restricted sites during work hours. The goal is to detect any TOR usage and analyze related security incidents to mitigate potential risks.
 
 ---
@@ -13,7 +14,22 @@ Management suspects that some employees may be using TOR browsers to bypass netw
 
 ---
 ## Steps Taken by Bad Actor
-1. 
+1. Attempt to brute force the password in RDP with incorrect credentials
+2. Successfully log in
+3. Execute Malicious Powershell script: 
+```
+powershell.exe -EncodedCommand VwByAGkAdABlAC0ATwB1AHQAcAB1AHQAIABoAGUAbABsAG8AIAB3AG8AcgBsAGQ=
+
+# Define the URL and the destination path
+$url = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%2Fid%2FOIP.D_2umvMRIihretglyFNrlwHaEK%3Fr%3D0%26pid%3DApi&f=1&ipt=c3186ebe04803f74c7321aa6f7a1ddc64ab70f005e924506bd045c0c41df2737&ipo=images"
+$output = ".\image.jpg"
+
+# Download the image
+Invoke-WebRequest -Uri $url -OutFile $output
+```
+5. Download a malicious file using p: 
+Note: Of course these actions are harmless for the purpose of the lab. The "malicious powershell script" prints "hello world" to the screen. And the "malicious file" is just an image of a tree.
+
 ---
 
 ## Steps Taken
