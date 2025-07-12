@@ -6,10 +6,10 @@ One of the administrators from the IT team calls you, the cybersecurity analyst,
 
 ---
 
-## High-Level TOR related IoC Discovery Plan:
-1. Check DeviceFileEvents for any tor(.exe) or firefox(.exe) file events
-2. Check DeviceProcessEvents for any signs of installation or usage
-3. Check DeviceNetworkEvents for any signs of outgoing connections over known TOR ports
+## IoC Discovery Plan:
+1. Check SecurityEvent for any signs of brute force attempts
+2. Check DeviceFileEvents for any signs file installations and/or file deletions
+3. Check DeviceProcessEvents for any signs powershell usage
 
 ---
 ## Steps Taken by Bad Actor
@@ -26,8 +26,8 @@ $output = "C:\Users\thanos\Downloads\image.jpg"
 # Download the image
 Invoke-WebRequest -Uri $url -OutFile $output
 ```
-5. Download a malicious file using p: 
-Note: Of course these actions are harmless for the purpose of the lab. The "malicious powershell script" prints "hello world" to the screen. And the "malicious file" is just an image of a tree.
+5. Delete powershell script 
+Note: Of course these actions are harmless for the purpose of the lab. The "malicious powershell script" prints "hello world" to the screen and the downloads an image of a tree.
 
 ---
 
