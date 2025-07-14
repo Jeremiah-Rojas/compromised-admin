@@ -62,7 +62,7 @@ DeviceFileEvents
 ```
 </br>The following results were displayed:
 <img width="1405" height="256" alt="image" src="https://github.com/user-attachments/assets/c8ec9aed-8c05-4fc1-b995-6bb21cca29f6" />
-I was curious to know how . The ".Ink" extension indicates powershell activity so I looked for that next.
+The ".Ink" extension indicates powershell activity so I looked for that next.
 
 5. Although the administor claimed he saw no scripts on the system, I decided to check you powershell events using the following query:
 ```kql
@@ -75,7 +75,9 @@ DeviceProcessEvents
 <img width="1408" height="289" alt="image" src="https://github.com/user-attachments/assets/9b293d53-4534-43f7-8b27-aad2cc3c4ec7" />
 Since I was looking specifically for powershell events, I click on the powershell event:
 </br><img width="314" height="500" alt="image" src="https://github.com/user-attachments/assets/61b41644-a787-45ef-856c-6eb1c308f41c" />
-
+This event tells me that the user used Powershell ISE to run the this command: ```"powershell.exe" -EncodedCommand VwByAGkAdABlAC0ATwB1AHQAcAB1AHQAIABoAGUAbABsAG8AIAB3AG8AcgBsAGQ=```
+</br>Based on the last character of the string "=", this is a base64 encoded message that is displayed to the screen when the command runs. The following command prints to the screen "hello world."
+check for deleted files
 
 
 
