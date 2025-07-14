@@ -51,7 +51,7 @@ DeviceLogonEvents
 ```
 The following results were displayed:
 <img width="1388" height="128" alt="image" src="https://github.com/user-attachments/assets/5bcd5d15-d258-49e1-a1ee-5258aad816a1" />
-From this I was able to see that the connection was done remotely and from a computer named "desktop-ni4tdje" which is my host computer. This concludes that the user was able to gain access to the admin account. _Note: Although there are more logon successes, these are from me logging in minutes for starting the lab._
+From this I was able to see that the connection was done remotely and from a computer named "desktop-ni4tdje" which is my host computer. This concludes that the user was able to gain access to the admin account. _Note: Although there are more logon successes, these are from me logging in minutes before starting the lab._
 
 4. Now that the user successfully logged in, I wanted to see what they did. From what the administrator told me, the user downloaded a file named "image.jpg" so I looked for this file and how it got there using the following query:
 ```kql
