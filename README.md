@@ -7,7 +7,7 @@ One of the administrators from the IT team calls you, the cybersecurity analyst,
 ---
 
 ## IoC Discovery Plan:
-1. Check SecurityEvent for any signs of brute force attempts
+1. Check DeviceLogonEvents for any signs of brute force attempts
 2. Check DeviceFileEvents for any signs file installations and/or file deletions
 3. Check DeviceProcessEvents for any signs powershell usage
 
@@ -33,9 +33,18 @@ Note: Of course these actions are harmless for the purpose of the lab. The "mali
 
 ## Steps Taken
 
-1. ...
-2. ...
-3. ...
+1. First look for logon failures using the following query (I narrowed down the results by entering in the DeviceName):
+```kql
+DeviceLogonEvents
+| where DeviceName == "rojas-admin"
+| where ActionType == "LogonFailed"
+```
+</br>The following events results were displayed:
+<img width="1402" height="289" alt="image" src="https://github.com/user-attachments/assets/ce9cee7f-8b95-40a6-9949-a29bf8ec68ec" />
+Due to the number of failed logon attempts (7) in a period of three seconds, I concluded that this was a brute force attempt.
+2. 
+4. ...
+5. ...
 
 ---
 
