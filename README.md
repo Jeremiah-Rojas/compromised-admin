@@ -74,7 +74,7 @@ DeviceProcessEvents
 </br>The following events were displayed:
 <img width="1408" height="289" alt="image" src="https://github.com/user-attachments/assets/9b293d53-4534-43f7-8b27-aad2cc3c4ec7" />
 Since I was looking specifically for powershell events, I click on the powershell event:
-<img width="362" height="548" alt="image" src="https://github.com/user-attachments/assets/61b41644-a787-45ef-856c-6eb1c308f41c" />
+</br><img width="314" height="500" alt="image" src="https://github.com/user-attachments/assets/61b41644-a787-45ef-856c-6eb1c308f41c" />
 
 
 
