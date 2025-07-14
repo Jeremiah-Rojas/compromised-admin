@@ -39,7 +39,7 @@ DeviceLogonEvents
 | where DeviceName == "rojas-admin"
 | where ActionType == "LogonFailed"
 ```
-</br>The following events results were displayed:
+The following events results were displayed:
 <img width="1402" height="289" alt="image" src="https://github.com/user-attachments/assets/ce9cee7f-8b95-40a6-9949-a29bf8ec68ec" />
 Due to the number of failed logon attempts (7) in a period of three seconds, I concluded that this was a brute force attempt.
 
@@ -49,7 +49,7 @@ DeviceLogonEvents
 | where DeviceName == "rojas-admin"
 | where ActionType == "LogonSuccess"
 ```
-</br>The following results were displayed:
+The following results were displayed:
 <img width="1388" height="128" alt="image" src="https://github.com/user-attachments/assets/5bcd5d15-d258-49e1-a1ee-5258aad816a1" />
 From this I was able to see that the connection was done remotely and from a computer named "desktop-ni4tdje" which is my host computer. This concludes that the user was able to gain access to the admin account. _Note: Although there are more logon successes, these are from me logging in minutes for starting the lab._
 
@@ -60,7 +60,7 @@ DeviceFileEvents
 | where ActionType == "FileCreated"
 | where FileName contains "image"
 ```
-</br>The following results were displayed:
+The following results were displayed:
 <img width="1405" height="256" alt="image" src="https://github.com/user-attachments/assets/c8ec9aed-8c05-4fc1-b995-6bb21cca29f6" />
 The ".Ink" extension indicates powershell activity so I looked for that next.
 
@@ -71,7 +71,7 @@ DeviceProcessEvents
 | where ActionType == "ProcessCreated"
 | where InitiatingProcessCommandLine contains "powershell"
 ```
-</br>The following events were displayed:
+The following events were displayed:
 <img width="1408" height="289" alt="image" src="https://github.com/user-attachments/assets/9b293d53-4534-43f7-8b27-aad2cc3c4ec7" />
 Since I was looking specifically for powershell events, I click on the powershell event:
 </br><img width="314" height="500" alt="image" src="https://github.com/user-attachments/assets/61b41644-a787-45ef-856c-6eb1c308f41c" />
