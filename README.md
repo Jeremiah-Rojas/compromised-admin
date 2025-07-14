@@ -42,7 +42,13 @@ DeviceLogonEvents
 </br>The following events results were displayed:
 <img width="1402" height="289" alt="image" src="https://github.com/user-attachments/assets/ce9cee7f-8b95-40a6-9949-a29bf8ec68ec" />
 Due to the number of failed logon attempts (7) in a period of three seconds, I concluded that this was a brute force attempt.
-2. 
+2. Next, I wanted to verify if the malicious user was able to successfully logon so I slgithly shcnged the wurey to search for logon successes:
+```kql
+DeviceLogonEvents
+| where DeviceName == "rojas-admin"
+| where ActionType == "LogonSuccess"
+```
+</br>The following results were displayed.
 4. ...
 5. ...
 
