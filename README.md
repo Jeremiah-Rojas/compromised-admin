@@ -113,9 +113,5 @@ The administrator's device was compromised via brute force, ```rojas-admin```. T
 - **Author Contact**: https://www.linkedin.com/in/jeremiah-rojas-2425532b3
 - **Date**: July 12, 2025
 
----
-
-## Revision History:
-| **Version** | **Changes**                   | **Date**         | **Modified By**   |
 |-------------|-------------------------------|------------------|-------------------|
 | 1.0         | Initial draft                  | `July  14, 2025`  | `Jeremiah Rojas`   
