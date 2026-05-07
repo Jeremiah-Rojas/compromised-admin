@@ -64,7 +64,7 @@ The following results were displayed:
 <img width="1405" height="256" alt="image" src="https://github.com/user-attachments/assets/c8ec9aed-8c05-4fc1-b995-6bb21cca29f6" />
 The ".Ink" extension indicates powershell activity so I looked for that next.
 
-5. Although the administor claimed he saw no scripts on the system, I decided to check you powershell events using the following query:
+5. Although the administor claimed he saw no scripts on the system, I decided to check for powershell events using the following query:
 ```kql
 DeviceProcessEvents
 | where DeviceName == "rojas-admin"
